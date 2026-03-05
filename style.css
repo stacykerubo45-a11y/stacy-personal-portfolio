@@ -1,0 +1,486 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(14, 14, 33);
+    position: center;
+    color: #d1d5db;
+    max-width: 100%;
+}
+header{
+    width: 100%;
+    background-color: rgb(23, 23, 30);
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0;
+    opacity: 100%;
+    position: relative;
+    z-index: 1000;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    z-index: 999;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to top, pink, purple, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.main-menu ul{
+   display: inline-block; 
+    list-style: none;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    gap: 30px;
+    padding-right: 30px;
+}
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+li a:hover{
+    color: cyan;
+}
+.menuBtn{
+    font-size: 28px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+}
+.closeBtn{
+    font-size: 28px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: none;
+}
+.fa-brands
+{
+    color: cyan;
+    padding: 0;
+    display: inline-block;
+    width: 100px;
+    font-size: 32px;
+}
+.fa-whatsapp{
+   width: 40px;
+}
+.fa-linkedin{
+    width: 40px;
+}
+.fa-github{
+    width: 40px;
+}
+.fa-brands:hover{
+    color: purple;
+}
+
+/* smaller icon sizes on narrow viewports */
+@media only screen and (max-width: 400px) {
+    .fa-brands {
+        font-size: 24px;
+        width: 60px;
+    }
+    .fa-whatsapp, .fa-linkedin, .fa-github {
+        width: 30px;
+    }
+    /* solid/regular icons too */
+    .fa-solid, .fa-regular {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+/* Desktop/Full Screen */
+@media only screen and (min-width: 769px){
+    .main-menu ul{
+        display: inline-block;
+    }
+    #menu{
+        display: inline-block !important;
+        opacity: 1 !important;
+        padding: 10px;
+        
+    }
+    .menuBtn,
+    .closeBtn{
+        display: none !important;
+    }
+    .container{
+        z-index: 999;
+    }
+}
+
+/* Mobile/Small Screen */
+@media only screen and (max-width: 769px){
+    .menuBtn{
+        display: block;
+    }
+    
+   .main-menu ul{
+        display: none;
+    }
+    #menu{
+        position: absolute;
+        font-size: 30px;
+        top: 100px;
+        right: 0;
+        background-color: rgb(47, 43, 43, 100%);
+        z-index: 999;
+        width: 100%;
+        text-align: center;
+        background-position: center;
+        background-size: 100%;
+        margin: 0;
+        
+        
+        
+    }
+     .container{
+        z-index: 999;
+     }
+    .main-menu ul li{
+        display: block;
+        margin: 20px;
+    }
+    .logo{
+        font-size: 20px;
+        display: inline;
+    }
+}
+    
+ /*home section*/
+ .home {
+justify-content: center;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+padding-top: 80px;
+padding-bottom: 80px;
+min-height: 100vh;
+
+
+align-items: center;
+
+ }   
+.home img{
+    margin-top: 50px;
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    background: linear-gradient(135deg, cyan, pink, purple, cyan);
+    border-radius: 50%;
+    
+ }
+ .name{
+    font-size: 35px;
+    
+ }
+ .work{
+font-size: 29px;
+color:rgb(194, 119, 132);
+padding-top: 70px;
+ }
+ .i{
+    font-size: 25px;
+    color: cyan;
+ }   
+    
+.mainp{
+    font-size: 20px;
+}
+.view{
+    margin-top: 80px;
+    padding: 10px;
+    background: palevioletred;
+    width: 50%px;
+    color: antiquewhite;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 rgb(14, 14, 23);;
+    border-radius: 10px;
+    border: palevioletred;
+    font-size: 30px;
+}
+.con{
+    margin-top: 80px;
+    padding: 10px;
+    background: whitesmoke;
+    width: 50%;
+    color: gray;
+    font-weight: bold;
+    box-shadow: 0 2px 3px 0 rgb(14, 14, 23);;
+    border-radius: 10px;
+    border: whitesmoke;
+    font-size: 30px;
+}
+.view:hover{
+    color: #1a1919;
+    background: cyan;
+}
+.con:hover{
+    color: antiquewhite;
+    background: purple;
+}
+@media only screen and (max-width: 400px){
+    .home{
+        font-size: 10px;
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .view,
+    .con{
+        width: 120px;
+        padding: 8px;
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+    
+}
+/*about section*/
+.about{
+    
+    width:100%;
+   
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.about h2{
+padding: 30px;
+}
+.journey{
+padding: 30px;
+text-align: left;
+}
+.about img{
+    width: 90%;
+    height: 400px;
+}
+.about h3{
+    
+    font-size: 25px;
+}
+.skills{
+    width: 100%;
+  
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .skills {
+        min-width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .skill-list {
+        display: block;
+        text-align: center;
+    }
+    .skill-item {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .skill-item ul {
+        margin: 0 auto;
+    }
+    .skill-item ul li{
+        width: 100%;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+}
+.skills h2{
+    padding: 30px;
+    font-size: 30px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+hr{
+    border: 1px solid rgb(156, 156, 165);
+    margin: 40px auto;
+    width: 80%;
+}
+.skill-item ul li{
+    display: block;
+    
+    text-align: left;
+    padding: 20px;
+    
+
+}
+.skill-item ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    background: rgb(47, 43, 43, 50%);
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: #1a1919 0px 2px 3px 0;
+}
+.fa-solid,
+.fa-regular{
+    
+    color: cyan;
+    padding: 30px;
+    display: block;
+}
+.projects{
+    width: 100%;
+    min-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.projects h2{
+    padding: 30px;
+    font-size: 30px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.project-list{
+    display: flex;
+    width: 100%;
+    
+    
+    flex-direction: row;
+}
+.project-item{
+    width: 50%;
+    padding: 20px;
+}
+.project-item img{
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project-item img:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+   
+}
+.project-item h3{
+    padding: 20px;
+    color: darkmagenta;
+}
+.project-item a{
+    text-decoration: none;
+    
+    font-weight: bold;
+}   
+.project-item a:hover{
+    color: cyan;
+}
+@media screen and (max-width: 768px) {
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+        .project-item img {
+            width: 100%;
+            height: auto;
+        }
+}
+.contact{
+    width: 100%;
+    min-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.contact h2{
+    padding: 30px;
+    font-size: 30px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+form{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input,
+form textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(47, 43, 43, 50%);
+    color: white;
+    font-size: 16px;
+    }
+form button{
+    padding: 10px;
+    background: palevioletred;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 30px;
+}
+form button:hover{
+    background: cyan;
+    color: #1a1919;
+}
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+    
+}
+footer{
+    width: 100%;
+    background-color: rgb(23, 23, 30);
+    color: whitesmoke;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    height: 100px;
+}   
+footer p{
+    padding: 20px;
+}
