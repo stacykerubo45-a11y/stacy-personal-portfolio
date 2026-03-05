@@ -11,6 +11,7 @@ body{
     position: center;
     color: #d1d5db;
     max-width: 100%;
+    overflow-x: hidden;
 }
 header{
     width: 100%;
@@ -102,17 +103,26 @@ li a:hover{
 /* smaller icon sizes on narrow viewports */
 @media only screen and (max-width: 400px) {
     .fa-brands {
-        font-size: 24px;
-        width: 60px;
+        font-size: 20px;
+        width: 20px;
     }
     .fa-whatsapp, .fa-linkedin, .fa-github {
-        width: 30px;
+        width: 20px;
     }
-    /* solid/regular icons too */
+    
     .fa-solid, .fa-regular {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 16px;
+        padding: 15px;
     }
+    .logo{
+        font-size: 15px;
+        padding: 0;
+        letter-spacing: 0;
+    }
+    .container {
+        padding: 0 10px;
+    }
+   
 }
 
 /* Desktop/Full Screen */
@@ -361,7 +371,6 @@ hr{
 }
 .projects{
     width: 100%;
-    min-width: 400px;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
@@ -423,7 +432,6 @@ hr{
 }
 .contact{
     width: 100%;
-    min-width: 400px;
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
